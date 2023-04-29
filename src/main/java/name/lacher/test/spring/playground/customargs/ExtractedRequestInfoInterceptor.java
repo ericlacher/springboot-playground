@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 
 // extract info from request into ExtractedRequestInfo
 // use header 'x-custom' or query param 'custom" to modify input
-@Component
 public class ExtractedRequestInfoInterceptor implements HandlerMethodArgumentResolver {
     public static final String CUSTOM_HEADER = "x-custom";
     @Override
