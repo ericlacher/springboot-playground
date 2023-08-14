@@ -1,0 +1,8 @@
+spring:
+  mvc:
+    # if the following is set to true, SpringBoot would log a warning on handled exceptions.
+    # However, we want to log all exceptions on "error" level.
+    # With the overridden logException method in LoggingExceptionHandlerExceptionResolver, there's no more check whether
+    # this is actually set to true and all exceptions are logged.
+    logResolvedException: false
+
